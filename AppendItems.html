@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Click the button to add a new item</h2>
+
+<input id="item" type="text"> <br><br>
+
+<button onclick="myFunction()">Add</button>
+
+<h3>Result will be displayed below:</h3>
+
+<p id="result"></p>
+
+<script>
+var items = [];
+
+function myFunction() {
+  var data = document.getElementById("item").value
+  items.push(data);
+  document.getElementById("result").innerHTML = items;
+}
+</script>
+
+</body>
+</html>
